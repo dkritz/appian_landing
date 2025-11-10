@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Appian Data Services</title>
+  <meta name="description" content="Appian Data Services — modern data engineering, analytics, and automation solutions.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Appian Data Services">
+  <meta property="og:description" content="Modern data engineering, analytics, and automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://appiandataservices.com/">
+  <meta property="og:image" content="https://appiandataservices.com/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="favicon.svg" alt="" class="logo" />
+        <span>Appian Data Services</span>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Ship data products that actually ship.</h1>
+        <p>We build pragmatic data pipelines, dashboards, and automation for healthcare and enterprise teams. Fast, reliable, documented.</p>
+        <p class="cta-row">
+          <a class="button primary" href="mailto:hello@appiandataservices.com?subject=Project%20inquiry">Start a project</a>
+          <a class="button ghost" href="#services">What we do</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="split" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Data Engineering</h3>
+            <p>ETL/ELT on SQL Server, Python, DuckDB, and Fabric/Power BI. Versioned, tested, and observable.</p>
+          </div>
+          <div class="card">
+            <h3>Analytics & BI</h3>
+            <p>Executive-ready dashboards and semantic models. KPI design, validation harnesses, and documentation.</p>
+          </div>
+          <div class="card">
+            <h3>Automation</h3>
+            <p>SSIS, batch/Python runners, and GitHub Actions to ship on schedule with alerts you can trust.</p>
+          </div>
+          <div class="card">
+            <h3>Advisory</h3>
+            <p>Architecture reviews, data governance, and cost control. Practical roadmaps, not slideware.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="work">
+      <div class="container">
+        <h2>Selected Work</h2>
+        <ul class="ticks">
+          <li>Funds Flow automation and wRVU validation for academic health systems</li>
+          <li>Clinical recruitment analytics linking Quickbase with Clinical Conductor</li>
+          <li>Throughput dashboards using staged fact/dim models with clear lineage</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Reach us at <a href="mailto:hello@appiandataservices.com">hello@appiandataservices.com</a>. 
+        You can replace this address later in <code>index.html</code>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Appian Data Services · San Francisco, CA</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

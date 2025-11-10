@@ -1,0 +1,58 @@
+/* Minimal, clean styles for a one-page site */
+:root {
+  --bg: #0b1020;
+  --card: #121933;
+  --ink: #e6ecff;
+  --muted: #a8b3d0;
+  --accent: #7aa2ff;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  background: linear-gradient(180deg, #0b1020, #0d1633);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(11,16,32,0.7); backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.site-header .container {
+  display: flex; align-items: center; justify-content: space-between; padding: 14px 20px;
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+.brand .logo { width: 24px; height: 24px; }
+nav a { color: var(--ink); text-decoration: none; margin-left: 18px; opacity: .9; }
+nav a:hover { opacity: 1; }
+nav .cta { padding: 8px 12px; border: 1px solid rgba(255,255,255,.15); border-radius: 10px; }
+
+.hero { padding: 84px 0 40px; text-align: left; }
+.hero h1 { font-size: clamp(32px, 6vw, 56px); line-height: 1.1; margin: 0 0 12px; }
+.hero p { color: var(--muted); max-width: 800px; }
+.cta-row { margin-top: 20px; display: flex; gap: 12px; }
+.button { display: inline-block; padding: 12px 18px; border-radius: 12px; text-decoration: none; }
+.button.primary { background: var(--accent); color: #0b1020; font-weight: 700; }
+.button.ghost { border: 1px solid rgba(255,255,255,.15); color: var(--ink); }
+
+.split { padding: 64px 0; }
+.split .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 18px; }
+
+.alt { background: radial-gradient(1200px 600px at 20% -10%, rgba(122,162,255,0.1), transparent 60%); padding: 64px 0; }
+
+h2 { font-size: 28px; margin: 0 0 10px; }
+h3 { margin: 0 0 6px; }
+
+.ticks { list-style: none; padding: 0; margin: 10px 0 0; }
+.ticks li { position: relative; padding-left: 26px; margin: 10px 0; color: var(--muted); }
+.ticks li::before { content: '✓'; position: absolute; left: 0; top: 0; color: var(--accent); }
+
+#contact { padding: 64px 0; }
+
+.site-footer { border-top: 1px solid rgba(255,255,255,0.06); padding: 20px 0 40px; color: var(--muted); }
